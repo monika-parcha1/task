@@ -1,4 +1,4 @@
-import { studentsData, minimumMarks } from "../utills/mockdata";
+import { studentsData, minimumMarks } from "../utils/mockdata";
 
 export const getBestThreeStudents = () => {
   const totalMarks = getTotalMarks(studentsData);

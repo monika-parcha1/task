@@ -1,6 +1,6 @@
 import "./App.css";
 import { getResultOfClass, getBestThreeStudents } from "./task";
-import { classes } from "./utills/mockdata";
+import { classes } from "./utils/mockdata";
 
 function App() {
   const results = Object.values(classes).map((data) => {
@@ -34,7 +34,7 @@ function App() {
             <table style={{ width: "100%" }}>
               <thead>
                 <tr>
-                  <td>Name </td> <td colSpan={3}>subjects </td>
+                  <td>Name </td> <td>Subjects </td> <td> Total Marks</td> <td>Rank or Position </td>
                 </tr>
               </thead>
               <tbody>
@@ -58,6 +58,9 @@ function App() {
                           </table>
                         );
                       })}
+                      <td>{res.total} </td>
+                      <td>{index + 1} </td>
+
                     </tr>
                   );
                 })}
