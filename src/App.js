@@ -11,6 +11,7 @@ function App() {
     };
   });
 
+  console.log("dhygf")
   const topThree = getBestThreeStudents();
 
   return (
